@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    width: 800px; /* Lebar kontainer */
+}
+
+.form-container {
+    padding: 40px;
+    width: 50%; /* Lebar formulir */
+    text-align: center;
+}
+
+.shadow-box {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efek shadow box */
+    border-radius: 10px;
+    background-color: white; /* Warna latar belakang kotak */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2563eb; /* Warna judul biru */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2563eb; /* Warna border saat fokus */
+    outline: none;
+}
+
+.btn {
+    background-color: #2563eb; /* Warna tombol biru */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #1e40af; /* Warna saat hover */
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.css-art {
+    width: 50%; /* Lebar elemen seni */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to top left, #000000, #0D47A1, #2196F3); /* Gradien dari hitam ke biru gelap ke biru */
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #2196F3, #1976D2); /* Gradien biru untuk bentuk */
+    border-radius: 20px;
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+}
+
+.shape:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.shape:nth-child(3) {
+    top: 70%;
+    left: 60%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}

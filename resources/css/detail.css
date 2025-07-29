@@ -1,0 +1,236 @@
+/* detail.css */
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+article h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.post-meta {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-content {
+    color: #374151;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    text-align: justify; /* Added for justified news description */
+}
+
+.latest-posts {
+    margin-top: 3rem;
+}
+
+.latest-posts .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.post-item {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+}
+
+.post-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.post-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.post-item .post-content {
+    padding: 0.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item .post-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post-item .post-excerpt {
+    font-size: 0.9rem;
+    color: #6b7280;
+    flex-grow: 1;
+    line-height: 1.4;
+}
+
+.read-more {
+    font-size: 0.85rem;
+    color: #2563eb;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.footer {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.85rem;
+    margin: 3rem 0 1rem;
+}
+
+/* New: Baca Berita Lainnya section */
+.baca-lainnya { margin-top: 4rem; background: #f9fafb; padding: 2rem; border-radius: 8px; }
+.baca-lainnya h2 { font-size: 1.4rem; font-weight: 600; color: #111827; margin-bottom: 1rem; text-align: center; }
+.baca-lainnya .posts-grid { gap: 1rem; }
+
+/* Tambahan untuk kotak "Baca Berita Lainnya" */
+
+.baca-berita-lainnya-box {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+}
+
+.baca-berita-lainnya-box .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.detail-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.detail-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.comment-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: sans-serif;
+}
+
+.comment-header {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.comment-input-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #8e6be8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.comment-textarea {
+    flex: 1;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    outline: none;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.comment-button,
+.comment-cancel {
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.comment-button {
+    background-color: #065fd4;
+    color: white;
+}
+
+.comment-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.comment-cancel {
+    background-color: transparent;
+    color: #065fd4;
+}
+
+.comment-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-item strong {
+    display: block;
+}
+
+.comment-item p {
+    margin: 0.25rem 0 0 0;
+}
